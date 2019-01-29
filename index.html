@@ -13,25 +13,27 @@
 
     <!-- Navigation Bar -->
 
-    <nav>
-        <ul class="main-navigation">
-            <li><a href="#about-us">About us</a></li>
-            <li><a href="#our-mission">Our mission</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#our-prices">Our prices</a></li>
-        </ul>
-        <caption class="logo">
-            <a href="#home">
-                <img src="images/logo-default-151x49.png" alt="landing-logo">
-            </a>
-        </caption>
-        <ul class="socail-navigation">
-            <li><a href="#" class="fab fa-instagram"></a></li>
-            <li><a href="#" class="fab fa-facebook"></a></li>
-            <li><a href="#" class="fab fa-twitter"></a></li>
-            <li><a href="#" class="fab fa-google-plus"></a></li>
-        </ul>
-    </nav>
+    <header>
+        <nav>
+            <ul class="main-navigation">
+                <li><a href="#about-us">About us</a></li>
+                <li><a href="#our-mission">Our mission</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#our-prices">Our prices</a></li>
+            </ul>
+            <caption class="logo">
+                <a href="#home">
+                    <img src="images/logo-default-151x49.png" alt="landing-logo">
+                </a>
+            </caption>
+            <ul class="socail-navigation">
+                <li><a href="#" class="fab fa-instagram"></a></li>
+                <li><a href="#" class="fab fa-facebook"></a></li>
+                <li><a href="#" class="fab fa-twitter"></a></li>
+                <li><a href="#" class="fab fa-google-plus"></a></li>
+            </ul>
+        </nav>
+    </header>
 
     <!-- Image Slider -->
 
@@ -44,10 +46,9 @@
     <main>
 
         <!-- About Us -->
-        <section id="about-us" class="container flex">
-
+        <section class="container flex">
             <section class="main-text">
-                <h2>The Advantages of Our Website</h2>
+                <h2 id="about-us">The Advantages of Our Website</h2>
                 <p>Welcome to our wonderful world. We sincerely hope that each and 
                     every user entering our website will find exactly what he/she 
                     is looking for. With advanced features of activating account 
@@ -77,29 +78,26 @@
                     </li>
                 </ul>                    
             </section>
-
         </section>
 
         <!-- Our mission -->
-        <div class="mission-background">
-            <section id="our-mission" class="container flex">
-
+        <section class="mission-background">
+            <div class="container flex">
                 <section class="our-mission-img"> 
                     <caption>
                         <img src="images/landing-1-620x465.png" alt="responsive=screens">
                     </caption>
                 </section>
                 <section class="read-more">
-                    <h2>Our Mission</h2>
+                    <h2 id="our-mission">Our Mission</h2>
                     <p>Our mission is to manifest our clients’ concepts into dynamic 
                         functional business realities. We aim to maximize the 
                         performance of our web templates.
                     </p>
                     <a href="#" class="button">READ MORE</a>
                 </section>
-
-            </section>
-        </div>
+            </div>
+        </section>
 
         <!-- Banner -->
 
@@ -108,9 +106,9 @@
         </section>
 
         <!-- Services -->
-        <div class="services-background">
-            <h2 class="heading">Our Services</h2>
-            <section id="services" class="container">
+        <section class="services-background">
+            <h2 class="heading" id="services">Our Services</h2>
+            <div class="container services">
 
                 <article class="card">
                     <span class="fa fa-paint-brush"></span>
@@ -130,16 +128,14 @@
                     <div class="line"></div>
                     <p>We offer our customers a variety of coding services, which help them create perfectly working websites..</p>
                 </article>
-
-            </section>
-        </div>
+            </div>
+        </section>
 
         <!-- Our prices \e007    \e005 -->
 
-        <section id="our-prices" class="flex container">
-
+        <section class="flex container">
             <section class="price-cards">
-                <h3>Regular</h3>
+                <h3 id="our-prices">Regular</h3>
                 <p><span class="left">$</span>10<span class="right">90</span></p>
                 <div></div>
                 <ul>
@@ -153,7 +149,7 @@
                 <a href="#" class="btn">buy now</a>
             </section>
             <section class="price-cards">
-                <h3><span>popular</span> PRO Pack</h3>
+                <h3>PRO Pack</h3>
                 <p><span class="left">$</span>19<span class="right">90</span></p>
                 <div></div>
                 <ul>
@@ -182,59 +178,55 @@
             </section>
 
         </section>
+    </main>    
+    <!-- Footer -->
+    <footer>
 
-        <!-- Footer -->
-        <footer>
+        <section class="map">
+                <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=sofia&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                <a href="https://www.embedgooglemap.net">embedgooglemap.net</a>
+        </section>
 
-            <section class="map">
-                    <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=sofia&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                    <a href="https://www.embedgooglemap.net">embedgooglemap.net</a>
-            </section>
+        <section class="contact-form">
+            <h4>Get in Touch</h4>
+            <form action="#" class="input-form">
+                <input type="text" name="name" placeholder="Your Name">
+                <input type="text" name="phone" placeholder="Phone">
+                <textarea name="message" cols="30" rows="5" placeholder="Your Message"></textarea>
+                <input type="email" name="email" placeholder="E-mail">
+                <input type="submit" value="SEND MESSAGE">
+            </form>
 
-            <section class="contact-form">
-                <h4>Get in Touch</h4>
-                <form action="#" class="input-form">
-                    <input type="text" name="name" placeholder="Your Name">
-                    <input type="text" name="phone" placeholder="Phone">
-                    <textarea name="message" cols="30" rows="5" placeholder="Your Message"></textarea>
-                    <input type="email" name="email" placeholder="E-mail">
-                    <input type="submit" value="SEND MESSAGE">
-                </form>
+            <h3>Contacts</h3>
 
-                <h3>Contacts</h3>
+            <ul class="contacts">
+                <li>
+                    <p>adress</p>
+                    <p>Washington, USA 6036 Richmond hwy., Alexandria, VA, 2230</p>
+                </li>
+                <li>
+                    <p>phone</p>
+                    <p>+1 (409) 987–5874</p>
+                </li>
+                <li>
+                    <p>e-mail</p>
+                    <p>info@demolink.org</p>
+                </li>
+            </ul>
 
-                <ul class="contacts">
-                    <li>
-                        <p>adress</p>
-                        <p>Washington, USA 6036 Richmond hwy., Alexandria, VA, 2230</p>
-                    </li>
-                    <li>
-                        <p>phone</p>
-                        <p>+1 (409) 987–5874</p>
-                    </li>
-                    <li>
-                        <p>e-mail</p>
-                        <p>info@demolink.org</p>
-                    </li>
+            <div class="bottom">
+                <p class="privacy">Vector&nbsp©&nbsp 2019. <a href="#">Privacy Policy</a></p>
+
+                <ul class="flex">
+                    <li><a href="#" class="fab fa-instagram"></a></li>
+                    <li><a href="#" class="fab fa-facebook"></a></li>
+                    <li><a href="#" class="fab fa-twitter"></a></li>
+                    <li><a href="#" class="fab fa-google-plus"></a></li>
                 </ul>
+            </div>
 
-                <div class="bottom">
-                    <p class="privacy">Vector&nbsp©&nbsp 2019. <a href="#">Privacy Policy</a></p>
+        </section>
 
-                    <ul class="flex">
-                        <li><a href="#" class="fab fa-instagram"></a></li>
-                        <li><a href="#" class="fab fa-facebook"></a></li>
-                        <li><a href="#" class="fab fa-twitter"></a></li>
-                        <li><a href="#" class="fab fa-google-plus"></a></li>
-                    </ul>
-                </div>
-
-            </section>
-
-        </footer>
-
-    </main>
-
-
+    </footer>
 </body>
 </html>
