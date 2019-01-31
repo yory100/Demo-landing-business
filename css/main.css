@@ -4,10 +4,6 @@
     --light-grey-color: #a9b8c1;
     --very-light-grey-color: #E5E5E5;
     --honey-color: #c0a184;
-    --breakpoint-sm: 576px;
-    --breakpoint-md: 768px;
-    --breakpoint-lg: 992px;
-    --breakpoint-xl: 1200px;
     --font-family-sans-serif: "Lato", Helvetica, Arial, sans-serif;
     --font-family-monospace: Menlo, Monaco, Consolas, "Courier New", monospace;
 }
@@ -30,6 +26,10 @@ body {
 .flex {
     display: flex;
     align-items: center;
+}
+
+#burger, #menu-burger{
+    display: none;
 }
 
 /* Hash tag links don't bump into header! 
@@ -83,7 +83,6 @@ nav>ul {
 
 .logo {
     display: inline-block;
-    margin: 0 auto;
 }
 
 .main-navigation li {
@@ -100,16 +99,16 @@ nav>ul {
     color: var(--honey-color);
 }
 
-.socail-navigation li {
+.social-navigation li {
     margin: 0 .3rem;
 }
 
-.socail-navigation li>a {
+.social-navigation li>a {
     text-decoration: none;
     color: var(--light-grey-color);
 }
 
-.socail-navigation li>a:hover {
+.social-navigation li>a:hover {
     text-decoration: none;
     color: var(--dark-grey-color);
 }
@@ -340,6 +339,7 @@ footer {
 
 .map {
     flex: 1;
+    position: relative;
 }
 
 .map iframe {
