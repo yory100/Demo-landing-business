@@ -1,0 +1,161 @@
+/* Hamburger menu and media queries */
+
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 80%;
+    }
+
+    #menu{
+        background: #333;
+        width: 20rem;
+        height: 100vh;
+        position: fixed;
+        flex-direction: column;
+        padding-top: 5rem;
+        left: 0;
+        top: 0;
+        transform: translateX(-20rem); 
+        z-index: 0;
+        transition: 0.5s;
+    }
+
+    #menu li {
+        padding: 1rem 0;
+    }
+
+    #menu li>a {
+        color: #fff;
+    }
+
+    #menu-burger {
+        display: none;
+    }
+    
+    #menu-burger:checked ~ #menu {
+        transform: translateX(0rem);
+    }
+
+    #menu>li>a:hover {
+        color:red;
+        transform: translateX(-20rem);
+    }
+    
+    #burger {
+        position: absolute;
+        cursor: pointer;
+        width: 2rem;
+        height: 2rem;
+        left: 1rem;
+        top: 1.5rem;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    
+    #burger > div {
+        height: 2px;
+        background-color: #000;
+        transition: 0.5s;
+        z-index: 999;
+    }
+    
+    #menu-burger:checked ~ #burger > div {
+      background-color: #fff;
+    }
+    
+    #menu-burger:checked ~ #burger > div:nth-child(1) {
+        transform: translateY(15px) rotate(45deg);
+    }
+    #menu-burger:checked ~ #burger > div:nth-child(2) {
+        opacity: 0;
+    }
+    #menu-burger:checked ~ #burger > div:nth-child(3) {
+        transform: translateY(-15px) rotate(-45deg);
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    #about{
+        flex-direction: column;
+    }
+
+    .progress-bar {
+        width: 100%;
+    }
+
+    .banner h2 {
+        margin: 0 auto;
+    }
+
+    .banner {
+        font-size: 1.8rem;
+    }
+
+    .services {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        min-width: 30%;
+    }
+
+    #price{
+        flex-wrap: wrap;
+    }
+
+    .price-cards {
+        min-width: 30%;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+  }
+
+  @media screen and (max-width: 576px) {   
+    
+    footer{
+        height: 100%;
+    }
+    
+    .logo {
+        margin-left:auto;
+    }
+
+    .social-navigation {
+        margin: 0 1rem;
+    }
+
+    #mission, .services, #price{
+        flex-direction: column;
+    }
+
+    .input-form {
+        width: 100%;
+    }
+
+    .input-form input {
+        display: block;
+        width: 100%;
+        padding: .5rem;
+        margin-bottom: 1rem;
+    }
+
+    .contact-form {
+        padding: 1rem;
+    }
+
+    .banner{
+        text-align: center;
+    }
+
+    h2#about-us {
+        text-align: center;
+    }
+
+
+  }
