@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Template for Busines landing web page">
     <title>Busines Landing Web Template</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="css/css_reset.css">
@@ -31,14 +32,14 @@
             </ul>
 
             <a href="#home" class="logo">
-                <img src="images/logo-default-151x49.png" alt="landing-logo">
+                <img src="images/logo-default-151x49.webp" alt="landing-logo">
             </a>
 
             <ul class="social-navigation">
-                <li><a href="https://www.instagram.com/?hl=en" class="fab fa-instagram" target="blank"></a></li>
-                <li><a href="https://www.facebook.com/" class="fab fa-facebook" target="blank"></a></li>
-                <li><a href="https://twitter.com/?lang=en" class="fab fa-twitter" target="blank"></a></li>
-                <li><a href="https://myaccount.google.com/intro" class="fab fa-google-plus" target="blank"></a></li>
+                <li><a href="https://www.instagram.com/?hl=en" class="fab fa-instagram" target="blank" aria-label="instagram link"></a></li>
+                <li><a href="https://www.facebook.com/" class="fab fa-facebook" target="blank" aria-label="facebook link"></a></li>
+                <li><a href="https://twitter.com/?lang=en" class="fab fa-twitter" target="blank" aria-label="twitter link"></a></li>
+                <li><a href="https://myaccount.google.com/intro" class="fab fa-google-plus" target="blank" aria-label="google plus link"></a></li>
             </ul>
         </nav>
     </header>
@@ -47,7 +48,13 @@
 
     <section class="slider" id="home">
         <caption>
-            <img src="images/bert-sz-1321445-unsplash.jpg" alt="laptop on a desk">
+            <picture>
+                <source media="(max-width: 576px)" srcset="images/bert-sz-1321445-unsplash-576.webp">
+                <source media="(max-width: 768px)" srcset="images/bert-sz-1321445-unsplash-768.webp"> 
+                <source media="(max-width: 1200px)" srcset="images/bert-sz-1321445-unsplash-1200.webp">
+                <img src="images/bert-sz-1321445-unsplash.webp" alt="laptop on a desk">
+            </picture>
+            <!-- <img src="images/bert-sz-1321445-unsplash.jpg" alt="laptop on a desk"> -->
             <p>Photo by bert sz on Unsplash</p>
         </caption>
     </section>
@@ -71,17 +78,17 @@
                 <ul>
                     <li>
                         <p>GENERAL CONSTRUCTION</p>
-                        <div class="colored-line"><div></div></div>
+                        <div class="colored-line"><div id="percent-75"></div></div>
                         <span>75%</span>
                     </li>
                     <li>
                         <p>PRE-CONSTRUCTION PLANNING</p>
-                        <div class="colored-line"><div></div></div>
+                        <div class="colored-line"><div id="percent-85"></div></div>
                         <span>85%</span>
                     </li>
                     <li>
                         <p>MANAGING PROJECTS</p>
-                        <div class="colored-line"><div></div></div>
+                        <div class="colored-line"><div id="percent-80"></div></div>
                         <span>80%</span>
                     </li>
                 </ul>                    
@@ -93,7 +100,7 @@
             <div class="container flex" id="mission">
                 <section class="our-mission-img"> 
                     <caption>
-                        <img src="images/landing-1-620x465.png" alt="responsive=screens">
+                        <img src="images/landing-1-620x465.webp" alt="responsive=screens">
                     </caption>
                 </section>
                 <section class="read-more">
@@ -191,21 +198,21 @@
     <footer>
 
         <section class="map">
-                <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=sofia&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=sofia&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" aria-label="our location on google maps"></iframe>
                 <a href="https://www.embedgooglemap.net">embedgooglemap.net</a>
         </section>
 
         <section class="contact-form">
-            <h4>Get in Touch</h4>
+            <h3>Get in Touch</h3>
             <form action="#" class="input-form">
-                <input type="text" name="name" placeholder="Your Name">
-                <input type="text" name="phone" placeholder="Phone">
-                <textarea name="message" cols="30" rows="5" placeholder="Your Message"></textarea>
-                <input type="email" name="email" placeholder="E-mail">
-                <input type="submit" value="SEND MESSAGE" class="button-input">
+                <input type="text" name="name" placeholder="Your Name" aria-label="your name">
+                <input type="text" name="phone" placeholder="Phone" aria-label="your phone">
+                <textarea name="message" cols="30" rows="5" placeholder="Your Message" aria-label="your message"></textarea>
+                <input type="email" name="email" placeholder="E-mail" aria-label="your email">
+                <input type="submit" value="SEND MESSAGE" class="button-input" aria-label="submit button">
             </form>
 
-            <h3>Contacts</h3>
+            <h4>Contacts</h4>
 
             <ul class="contacts">
                 <li>
@@ -226,10 +233,10 @@
                 <p class="privacy">Vector&nbsp©&nbsp 2019. <a href="#">Privacy Policy</a></p>
 
                 <ul class="flex">
-                    <li><a href="https://www.instagram.com/?hl=en" class="fab fa-instagram" target="blank"></a></li>
-                    <li><a href="https://www.facebook.com/" class="fab fa-facebook" target="blank"></a></li>
-                    <li><a href="https://twitter.com/?lang=en" class="fab fa-twitter" target="blank"></a></li>
-                    <li><a href="https://myaccount.google.com/intro" class="fab fa-google-plus" target="blank"></a></li>
+                    <li><a href="https://www.instagram.com/?hl=en" class="fab fa-instagram" target="blank" aria-label="instagram link"></a></li>
+                    <li><a href="https://www.facebook.com/" class="fab fa-facebook" target="blank" aria-label="facebook link"></a></li>
+                    <li><a href="https://twitter.com/?lang=en" class="fab fa-twitter" target="blank" aria-label="twitter link"></a></li>
+                    <li><a href="https://myaccount.google.com/intro" class="fab fa-google-plus" target="blank" aria-label="google plus link"></a></li>
                 </ul>
             </div>
 

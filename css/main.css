@@ -181,9 +181,20 @@ nav>ul {
     position: absolute;
     display: inline-block;
     height: .5rem;
-    width: 60%;
     background-color: var(--honey-color);
     border-radius: .25rem;
+}
+
+#percent-75{
+    width: 75%;
+}
+
+#percent-85{
+    width: 85%;
+}
+
+#percent-80{
+    width: 80%;
 }
 
 /* Our mission layout */
@@ -219,7 +230,7 @@ nav>ul {
 
 .banner {
     height: 200px;
-    background-image: url(/images/bg-image-1.jpg);
+    background-image: url(/images/bg-image-1.webp);
     background-size: cover;
     font-size: 2rem;
     color: var(--light-grey-color);
@@ -258,6 +269,8 @@ nav>ul {
     padding: 2rem;
     text-align: center;
     background-color: #fff;
+    outline: transparent;
+    transition: 0.3s;
 }
 
 .card span {
@@ -275,6 +288,7 @@ nav>ul {
     height: .2rem;
     margin: .5rem auto;
     background-color: var(--honey-color);
+    transition: 0.3s ease-in-out;
 }
 
 .card p {
@@ -374,7 +388,7 @@ footer {
     padding: 1.5rem 3rem;
 }
 
-.contact-form h4 {
+.contact-form h3 {
     font-size: 1.6rem;
     font-weight: bold;
 }
@@ -408,7 +422,8 @@ input[type="submit"] {
 
 /* Contacts */
 
-footer h3 {
+footer h4 {
+    font-size: 1.6rem;
     margin-bottom: .8rem;
     font-weight: bold;
 }
@@ -453,3 +468,17 @@ p.privacy {
     margin: 0 .5rem;
     color: var(--light-grey-color);
 }
+
+.contact-form ul.flex a:hover {
+    color: var(--honey-color);
+}
+
+.privacy a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.privacy a:hover{
+    text-decoration: underline;
+}
+

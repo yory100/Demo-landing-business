@@ -64,3 +64,16 @@
 	border-color: #c0a184;
 }  
 
+/*Cards hover style*/
+
+.card:hover{
+	outline: 3px solid rgba(35,190,159,0.3);
+}
+
+.card .line:hover{
+	width: 80%;
+	height: .4rem;
+	border-radius: .2rem;
+	margin: .4rem auto; /*this margi helps keep the text under the line static*/
+	background-color: rgba(35,190,159,0.3);
+}
