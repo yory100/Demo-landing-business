@@ -252,7 +252,8 @@ nav>ul {
 
 .banner {
     height: 200px;
-    background-image: url(/images/bg-image-1.webp);
+    /* background-image: url(/images/bg-image-1.webp); */
+    background-image: url(https://raw.githubusercontent.com/yory100/yory100.github.io/master/Demo-landing-business/images/bg-image-1.webp);
     background-size: cover;
     font-size: 2rem;
     color: var(--light-grey-color);
