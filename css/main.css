@@ -252,7 +252,7 @@ nav>ul {
 
 .banner {
     height: 200px;
-    background-image: url(https://yory100.github.iog/bg-image-1.webp);
+    background-image: url(/images/bg-image-1.webp);
     background-size: cover;
     font-size: 2rem;
     color: var(--light-grey-color);
