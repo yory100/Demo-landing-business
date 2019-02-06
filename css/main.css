@@ -124,6 +124,28 @@ nav>ul {
     overflow: hidden;
 }
 
+.main-heading {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    color: var( --very-light-grey-color );
+}
+
+.main-heading h1 {
+    font-size: 2.8rem;
+    margin: 1rem 0;
+}
+
+.main-heading h2 {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    margin-bottom: .8rem;
+}
+
 .slider p {
     position: absolute;
     right: 50px;
@@ -283,7 +305,7 @@ nav>ul {
     font-weight: bold;
 }
 
-.card .line {
+.line, .line-main-heading {
     width: 10%;
     height: .2rem;
     margin: .5rem auto;
