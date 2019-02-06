@@ -252,7 +252,7 @@ nav>ul {
 
 .banner {
     height: 200px;
-    background-image: url(/images/bg-image-1.webp);
+    background-image: url(/images/bg-image-1.jpg);
     background-size: cover;
     font-size: 2rem;
     color: var(--light-grey-color);
