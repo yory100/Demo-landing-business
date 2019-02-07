@@ -154,8 +154,7 @@ nav>ul {
     position: absolute;
     right: 50px;
     bottom: 30px;
-    color: #fff;
-    /* temporary styling for readability */
+    color:  var(--very-light-grey-color);
 }
 
 .slider img {
@@ -256,7 +255,6 @@ nav>ul {
 
 .banner {
     height: 200px;
-    /* background-image: url(/images/bg-image-1.webp); */
     background-image: url(https://github.com/yory100/Demo-landing-business/blob/abf02ec1d9060df358d59deab93996377be22996/images/bg-image-1.webp?raw=true);
     background-size: cover;
     font-size: 2rem;
@@ -267,6 +265,25 @@ nav>ul {
 .banner h2 {
     display: inline-block;
     margin: 0 auto 0 15%;
+}
+
+.banner a {
+    display: inline-block;
+    margin-top: 1rem;
+    color: inherit;
+    text-decoration: none;
+    outline: 2px dashed;
+    padding: .5rem .8rem;
+    transition: .3s;
+}
+
+.banner a:hover {
+    text-shadow: none;
+    color: var( --dark-grey-color );
+    background-color: var(--very-light-grey-color);
+    opacity: .3;
+    outline: none;
+    border-radius: .5rem;
 }
 
 /* Our services */
