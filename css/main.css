@@ -488,12 +488,13 @@ p.privacy {
 
 .contact-form ul.flex a {
     text-decoration: none;
-    margin: 0 .5rem;
-    color: var(--light-grey-color);
+    margin-left: 1.1rem;
+    color: inherit;
+    z-index: 2;
 }
 
 .contact-form ul.flex a:hover {
-    color: var(--honey-color);
+    color: black;
 }
 
 .privacy a{

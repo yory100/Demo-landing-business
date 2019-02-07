@@ -121,3 +121,25 @@
 	opacity: 1;
 	transform: translate3d(0, 0, 0);
 }
+
+.contact-form ul.flex a{
+	position: relative;
+}
+
+.contact-form ul.flex a::after{
+	content: '';
+	position: absolute;
+	top: -7.5px;
+	left: -7.5px;
+	background-color: #a9b8c1;
+	opacity: .4;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	z-index: -1;
+}
+
+.contact-form ul.flex a:hover::after {
+	background-color: lightblue;
+	opacity: .6;
+}
