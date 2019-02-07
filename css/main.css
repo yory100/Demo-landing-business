@@ -67,6 +67,10 @@ header {
     z-index: 2;
 }
 
+#menu{
+    display: none;
+}
+
 nav {
     display: flex;
     flex-wrap: wrap;

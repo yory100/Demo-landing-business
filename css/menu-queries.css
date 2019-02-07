@@ -5,7 +5,12 @@
         width: 90%;
     }
 
+    #menu-big {
+        display: none;
+    }
+
     #menu{
+        display: block;
         background: rgba(51,51,51,0.9);
         width: 20rem;
         height: 100vh;
@@ -16,7 +21,7 @@
         top: 0;
         transform: translateX(-20rem); 
         z-index: 0; 
-        transition: transform .3s;
+        transition: transform .6s;
     }
 
     #menu li {
@@ -83,6 +88,11 @@
     footer {
         height: 100%;
     }
+
+    .banner {
+        font-size: 1.6rem;
+        text-align: center;
+    }
   }
 
   @media screen and (max-width: 768px) {
@@ -118,10 +128,6 @@
 
     .banner h2 {
         margin: 0 auto;
-    }
-
-    .banner {
-        font-size: 1.8rem;
     }
 
     .services {
@@ -176,12 +182,6 @@
 
     .contact-form {
         padding: 1rem;
-    }
-
-    .banner{
-        text-align: center;
-        font-size: 1rem;
-        line-height: 1.5rem;
     }
 
     h2#about-us {
