@@ -16,7 +16,7 @@
         top: 0;
         transform: translateX(-20rem); 
         z-index: 0;
-        transition: 0.5s;
+        transition: translateX 0.5s;
     }
 
     #menu li {
@@ -37,7 +37,7 @@
 
     #menu>li>a:hover {
         color:red;
-        transform: translateX(-20rem);
+        /* transform: translateX(-20rem); */
     }
     
     #burger {
