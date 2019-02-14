@@ -132,6 +132,7 @@
 
     .services {
         flex-wrap: wrap;
+        margin: 0;
     }
 
     .card {
